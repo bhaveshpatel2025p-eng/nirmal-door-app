@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F3F5F8" android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp" android:background="#172033">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NIRMAL DOOR" android:textColor="#FFFFFF" android:textSize="27sp" android:textStyle="bold"/>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PROFESSIONAL BILLING" android:textColor="#B9C5D8" android:textSize="11sp"/>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Opp Railway Station • KUDACHI-591311" android:textColor="#E8EDF4" android:textSize="12sp" android:layout_marginTop="12dp"/>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8050304196 • nirmaldoorkud@gmail.com" android:textColor="#E8EDF4" android:textSize="12sp"/>
+</LinearLayout>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NEW INVOICE" android:textColor="#172033" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="18dp"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp" android:background="#FFFFFF" android:layout_marginTop="8dp">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CUSTOMER &amp; BILL DETAILS" android:textColor="#667085" android:textSize="12sp" android:textStyle="bold"/>
+<EditText android:id="@+id/invoiceNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Invoice number" android:singleLine="true"/>
+<EditText android:id="@+id/customer" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Customer name" android:singleLine="true"/>
+<EditText android:id="@+id/mobile" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Customer mobile" android:inputType="phone" android:singleLine="true"/>
+<EditText android:id="@+id/address" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Customer address" android:singleLine="true"/>
+</LinearLayout>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DOOR ITEMS" android:textColor="#172033" android:textSize="18sp" android:textStyle="bold" android:layout_marginTop="18dp"/>
+<LinearLayout android:id="@+id/itemsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="8dp"/>
+<Button android:id="@+id/addDoor" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="+  ADD ANOTHER DOOR" android:textStyle="bold"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp" android:background="#FFFFFF" android:layout_marginTop="14dp">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADJUSTMENTS" android:textColor="#667085" android:textSize="12sp" android:textStyle="bold"/>
+<EditText android:id="@+id/discount" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Discount (₹)" android:inputType="numberDecimal"/>
+<EditText android:id="@+id/gst" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="GST (%)" android:inputType="numberDecimal"/>
+<EditText android:id="@+id/paid" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Advance / Paid (₹)" android:inputType="numberDecimal"/>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="#172033" android:layout_marginTop="12dp">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PAYMENT SUMMARY" android:textColor="#AEB9CA" android:textSize="11sp" android:textStyle="bold"/>
+<TextView android:id="@+id/summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold" android:paddingTop="10dp"/>
+</LinearLayout>
+<Button android:id="@+id/save" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SAVE BILL" android:textStyle="bold" android:layout_marginTop="14dp"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"><Button android:id="@+id/pdf" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="PDF / PRINT"/><Button android:id="@+id/whatsapp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="WHATSAPP"/></LinearLayout>
+<Button android:id="@+id/newBill" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="+  NEW BILL" android:layout_marginBottom="20dp"/>
+</LinearLayout></ScrollView>
